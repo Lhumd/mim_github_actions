@@ -111,8 +111,8 @@ jobs:
         run: |
           sudo apt-cache search robotpkg-py36-qt5-gepetto-viewer-corba
           sudo apt-get install -y \
-            robotpkg-py36-qt5-gepetto-viewer-corba \ # LAAS 3D robot viewer network client/server.
-            robotpkg-hpp-fcl \                       # collision detection for pinocchio.
+            robotpkg-py36-qt5-gepetto-viewer-corba \
+            robotpkg-hpp-fcl \                   
             robotpkg-libccd \                        # not sure.
             robotpkg-octomap \                       # not sure.
             robotpkg-pinocchio \                     # Eigen based rigid body dynamics library.
