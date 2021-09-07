@@ -112,11 +112,14 @@ jobs:
           sudo apt-cache search robotpkg-py36-qt5-gepetto-viewer-corba
           sudo apt-get install -y \
             robotpkg-py36-qt5-gepetto-viewer-corba \
-            robotpkg-hpp-fcl \                   
-            robotpkg-libccd \                       
-            robotpkg-octomap \       
-            robotpkg-pinocchio 
-            
+            robotpkg-hpp-fcl \
+            robotpkg-libccd \
+            robotpkg-octomap \
+            robotpkg-pinocchio \
+            robotpkg-parametric-curves \
+            robotpkg-simple-humanoid-description \
+            robotpkg-eigen-quadprog \
+            robotpkg-tsid
       - name: "fix shpinx and tools version"
         shell: bash
         run: |
