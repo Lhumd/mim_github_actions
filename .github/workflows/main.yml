@@ -88,6 +88,7 @@ jobs:
           sudo sh -c 'echo "deb [arch=amd64] http://robotpkg.openrobots.org/wip/packages/debian/pub $(lsb_release -sc) robotpkg" > /etc/apt/sources.list.d/robotpkg-openrobots.list' \
           sudo sh -c 'echo "deb [arch=amd64] http://robotpkg.openrobots.org/packages/debian/pub $(lsb_release -sc) robotpkg" >> /etc/apt/sources.list.d/robotpkg-openrobots.list' \
           curl http://robotpkg.openrobots.org/packages/deb
+          
       # LAAS dependencies.
       - name: "Update"
         shell: bash 
@@ -96,9 +97,15 @@ jobs:
           sudo apt-get update --fix-missing
           sudo apt-get -y install -f
           sudo apt-get -y upgrade
+    
       - name: "apt-cache"
         shell: bash 
         run: sudo apt-cache search robotpkg-
+
+      - name: "apt install LAAS packages"
+        shell: bash 
+        run: more /etc/apt/sources.list.d/robotpkg-openrobots.list
+        
       - name: "apt install LAAS packages"
         shell: bash 
         run: |
