@@ -92,7 +92,7 @@ jobs:
       - name: "apt install LAAS packages"
         shell: bash 
         run: |
-          sudo apt update
+          sudo apt update --fix-missing
           sudo apt install -y \
             robotpkg-py36-qt5-gepetto-viewer-corba \
             robotpkg-hpp-fcl \
