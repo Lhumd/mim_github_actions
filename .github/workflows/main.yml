@@ -96,6 +96,7 @@ jobs:
           sudo apt update --fix-missing
           sudo apt-get -y install -f
           sudo apt-get -y upgrade
+          sudo apt-cache search robotpkg-py36-qt5-gepetto-viewer-corba
           sudo apt install -y \
             robotpkg-py36-qt5-gepetto-viewer-corba \
             robotpkg-hpp-fcl \
