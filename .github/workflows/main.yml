@@ -102,7 +102,7 @@ jobs:
         shell: bash 
         run: sudo apt-cache search robotpkg-
 
-      - name: "apt install LAAS packages"
+      - name: "print robotpkg-openrobots.list"
         shell: bash 
         run: more /etc/apt/sources.list.d/robotpkg-openrobots.list
         
