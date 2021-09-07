@@ -27,27 +27,27 @@ jobs:
       #
 
       # apt dependencies.
-      - name: "apt install"
-        shell: bash 
-        run: |
-          sudo apt update
-          sudo apt install -y \
-            build-essential \
-            python3-pip \
-            cmake \
-            libcereal-dev \
-            libyaml-cpp-dev \
-            libboost-all-dev \
-            libgtest-dev \
-            libeigen3-dev \
-            libedit-dev \
-            doxygen \
-            libncurses5-dev \
-            freeglut3-dev \
-            libxmu-dev \
-            git \
-            ssh \
-            lsb-release
+#       - name: "apt install"
+#         shell: bash 
+#         run: |
+#           sudo apt update
+#           sudo apt install -y \
+#             build-essential \
+#             python3-pip \
+#             cmake \
+#             libcereal-dev \
+#             libyaml-cpp-dev \
+#             libboost-all-dev \
+#             libgtest-dev \
+#             libeigen3-dev \
+#             libedit-dev \
+#             doxygen \
+#             libncurses5-dev \
+#             freeglut3-dev \
+#             libxmu-dev \
+#             git \
+#             ssh \
+#             lsb-release
 
       # Set python3.6 by default
       - name: Set python3 by default
@@ -55,29 +55,29 @@ jobs:
         run: >
           sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
       # pip dependencies.
-      - name: "pip install"
-        shell: bash
-        run: |
-          python3.6 -m pip install -U pip
-          python3.6 -m pip install -U "setuptools>=40.0"
-          python3.6 -m pip install -U \
-            colcon-common-extensions \
-            treep \
-            fyplot \
-            pyside2 \
-            empy \
-            flake8 \
-            m2r \
-            sphinx \
-            pyjson \
-            recommonmark \
-            sphinx_rtd_theme \
-            sphinxcontrib-moderncmakedomain \
-            breathe \
-            pytest \
-            gcovr \
-            xacro \
-            pybullet
+#       - name: "pip install"
+#         shell: bash
+#         run: |
+#           python3.6 -m pip install -U pip
+#           python3.6 -m pip install -U "setuptools>=40.0"
+#           python3.6 -m pip install -U \
+#             colcon-common-extensions \
+#             treep \
+#             fyplot \
+#             pyside2 \
+#             empy \
+#             flake8 \
+#             m2r \
+#             sphinx \
+#             pyjson \
+#             recommonmark \
+#             sphinx_rtd_theme \
+#             sphinxcontrib-moderncmakedomain \
+#             breathe \
+#             pytest \
+#             gcovr \
+#             xacro \
+#             pybullet
 
 
       # Add the robotpkg ppa. This contains the LAAS laboratory code base.
