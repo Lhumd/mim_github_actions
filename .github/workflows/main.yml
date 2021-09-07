@@ -132,7 +132,7 @@ jobs:
             robotpkg-py36-parametric-curves \        # Python bindings
             robotpkg-py36-sot-core-v3 \              # Python bindings
             robotpkg-py36-quadprog \                 # Python bindings
-            robotpkg-py36-sot-dynamic-pinocchio-v3 \ # Python bindings
+            robotpkg-py36-sot-dynamic-pinocchio-v3   # Python bindings
             
       - name: "fix shpinx and tools version"
         shell: bash
