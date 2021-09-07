@@ -96,6 +96,9 @@ jobs:
           sudo apt-get update --fix-missing
           sudo apt-get -y install -f
           sudo apt-get -y upgrade
+      - name: "apt-cache"
+        shell: bash 
+        run: sudo apt-cache search robotpkg-py36-qt5-gepetto-viewer-corba
       - name: "apt install LAAS packages"
         shell: bash 
         run: |
