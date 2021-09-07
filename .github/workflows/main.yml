@@ -111,28 +111,28 @@ jobs:
         run: |
           sudo apt-cache search robotpkg-py36-qt5-gepetto-viewer-corba
           sudo apt-get install -y \
-            robotpkg-py36-qt5-gepetto-viewer-corba \
-            robotpkg-hpp-fcl \
-            robotpkg-libccd \
-            robotpkg-octomap \
-            robotpkg-pinocchio
-            robotpkg-parametric-curves           # Spline and polynomes library.
-            robotpkg-simple-humanoid-description # Simple humanoid robot_properties package.
-            robotpkg-eigen-quadprog              # QP solver using eigen.
-            robotpkg-tsid                        # Andrea Delprete Task Space Inverse Dynamics.
-            robotpkg-dynamic-graph-v3         # Dynamic graph.
-            robotpkg-sot-core-v3              # Stack of Tasks.
-            robotpkg-sot-tools-v3             # Dynamic Graph Utilities, to be removed at some point.
-            robotpkg-sot-dynamic-pinocchio-v3 # DG wrapper around pinocchio
-            robotpkg-example-robot-data      # Data for LAAS unnitests.
-            robotpkg-py36-tsid                     # python bindings
-            robotpkg-py36-dynamic-graph-v3         # python bindings
-            robotpkg-py36-eigenpy                  # Python bindings
-            robotpkg-py36-pinocchio                # Python bindings
-            robotpkg-py36-parametric-curves        # Python bindings
-            robotpkg-py36-sot-core-v3              # Python bindings
-            robotpkg-py36-quadprog                 # Python bindings
-            robotpkg-py36-sot-dynamic-pinocchio-v3 # Python bindings
+            robotpkg-py36-qt5-gepetto-viewer-corba \ # LAAS 3D robot viewer network client/server.
+            robotpkg-hpp-fcl \                       # collision detection for pinocchio.
+            robotpkg-libccd \                        # not sure.
+            robotpkg-octomap \                       # not sure.
+            robotpkg-pinocchio \                     # Eigen based rigid body dynamics library.
+            robotpkg-parametric-curves \             # Spline and polynomes library.
+            robotpkg-simple-humanoid-description \   # Simple humanoid robot_properties package.
+            robotpkg-eigen-quadprog \                # QP solver using eigen.
+            robotpkg-tsid \                          # Andrea Delprete Task Space Inverse Dynamics.
+            robotpkg-dynamic-graph-v3 \              # Dynamic graph.
+            robotpkg-sot-core-v3 \                   # Stack of Tasks.
+            robotpkg-sot-tools-v3 \                  # Dynamic Graph Utilities, to be removed at some point.
+            robotpkg-sot-dynamic-pinocchio-v3 \      # DG wrapper around pinocchio
+            robotpkg-example-robot-data \            # Data for LAAS unnitests.
+            robotpkg-py36-tsid \                     # python bindings
+            robotpkg-py36-dynamic-graph-v3 \         # python bindings
+            robotpkg-py36-eigenpy \                  # Python bindings
+            robotpkg-py36-pinocchio \                # Python bindings
+            robotpkg-py36-parametric-curves \        # Python bindings
+            robotpkg-py36-sot-core-v3 \              # Python bindings
+            robotpkg-py36-quadprog \                 # Python bindings
+            robotpkg-py36-sot-dynamic-pinocchio-v3 \ # Python bindings
             
       - name: "fix shpinx and tools version"
         shell: bash
