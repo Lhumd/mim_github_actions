@@ -119,7 +119,11 @@ jobs:
             robotpkg-parametric-curves \
             robotpkg-simple-humanoid-description \
             robotpkg-eigen-quadprog \
-            robotpkg-tsid
+            robotpkg-tsid \
+            robotpkg-dynamic-graph-v3 \
+            robotpkg-sot-core-v3 \
+            robotpkg-sot-tools-v3 \
+            robotpkg-sot-dynamic-pinocchio-v3 
       - name: "fix shpinx and tools version"
         shell: bash
         run: |
