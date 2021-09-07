@@ -113,9 +113,9 @@ jobs:
           sudo apt-get install -y \
             robotpkg-py36-qt5-gepetto-viewer-corba \
             robotpkg-hpp-fcl \                   
-            robotpkg-libccd \                        # not sure.
-            robotpkg-octomap \                       # not sure.
-            robotpkg-pinocchio \                     # Eigen based rigid body dynamics library
+            robotpkg-libccd \                       
+            robotpkg-octomap \       
+            robotpkg-pinocchio 
             
       - name: "fix shpinx and tools version"
         shell: bash
