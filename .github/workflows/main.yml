@@ -101,7 +101,7 @@ jobs:
             robotpkg-hpp-fcl \
             robotpkg-libccd \
             robotpkg-octomap \
-            robotpkg-pinocchio \
+            robotpkg-pinocchio
       - name: "fix shpinx and tools version"
         shell: bash
         run: |
