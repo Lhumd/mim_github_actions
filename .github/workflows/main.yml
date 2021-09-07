@@ -92,6 +92,7 @@ jobs:
       - name: "apt install LAAS packages"
         shell: bash 
         run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ADD535E05E56C3FD
           sudo apt update --fix-missing
           sudo apt install -y \
             robotpkg-py36-qt5-gepetto-viewer-corba \
