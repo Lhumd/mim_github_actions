@@ -130,7 +130,7 @@ jobs:
             robotpkg-py36-eigenpy \
             robotpkg-py36-pinocchio \
             robotpkg-py36-parametric-curves \
-            robotpkg-py36-sot-core-v3 
+            robotpkg-py36-sot-core-v3 \
             robotpkg-py36-quadprog \
             robotpkg-py36-sot-dynamic-pinocchio-v3
       - name: "fix shpinx and tools version"
