@@ -123,7 +123,16 @@ jobs:
             robotpkg-dynamic-graph-v3 \
             robotpkg-sot-core-v3 \
             robotpkg-sot-tools-v3 \
-            robotpkg-sot-dynamic-pinocchio-v3 
+            robotpkg-sot-dynamic-pinocchio-v3 \
+            robotpkg-example-robot-data \
+            robotpkg-py36-tsid \
+            robotpkg-py36-dynamic-graph-v3 \
+            robotpkg-py36-eigenpy \
+            robotpkg-py36-pinocchio \
+            robotpkg-py36-parametric-curves \
+            robotpkg-py36-sot-core-v3 
+            robotpkg-py36-quadprog \
+            robotpkg-py36-sot-dynamic-pinocchio-v3
       - name: "fix shpinx and tools version"
         shell: bash
         run: |
