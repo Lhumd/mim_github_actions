@@ -28,13 +28,9 @@ runs:
     # source all dependencies
     #
     
-    - name: Debug
+    - name: Soure laas's packages
       shell: bash
-      run: |
-        if [-f /opt/openrobots/setup.bash]
-        then
-          source /opt/openrobots/setup.bash
-        fi
+      run: source /opt/openrobots/setup.bash
 
     #
     # Create the build folders
