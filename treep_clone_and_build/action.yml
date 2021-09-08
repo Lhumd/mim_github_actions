@@ -23,6 +23,19 @@ outputs:
 runs:
   using: "composite"
   steps:
+
+    #
+    # source all dependencies
+    #
+    
+    - name: Debug
+      shell: bash
+      run: |
+        if [-f /opt/openrobots/setup.bash]
+        then
+          source /opt/openrobots/setup.bash
+        fi
+
     #
     # Create the build folders
     #
