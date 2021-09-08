@@ -71,4 +71,3 @@ runs:
           sudo sh -c 'echo "export ROS_PACKAGE_PATH=\"/opt/openrobots/share:\$ROS_PACKAGE_PATH\"" >> /opt/openrobots/setup.bash'
           sudo sh -c 'echo "export CMAKE_PREFIX_PATH=\"/opt/openrobots:\$CMAKE_PREFIX_PATH\"" >> /opt/openrobots/setup.bash'
           sudo chown -R root:root /opt/openrobots
-          source /opt/openrobots/setup.bash
