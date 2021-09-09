@@ -105,11 +105,15 @@ runs:
       shell: bash
       run: |
         source /opt/openrobots/setup.bash
-        echo colcon build --cmake-args \
-          -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
-          -DPYBIND11_TEST=OFF \
-          -DBUILD_TESTING=OFF
-        colcon build --cmake-args \
-          -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
-          -DPYBIND11_TEST=OFF \
-          -DBUILD_TESTING=OFF
+        echo colcon build \
+          --event-handlers console_direct+ \
+          --cmake-args \
+            -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+            -DPYBIND11_TEST=OFF \
+            -DBUILD_TESTING=OFF
+        colcon build \
+          --event-handlers console_direct+ \
+          --cmake-args \
+            -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+            -DPYBIND11_TEST=OFF \
+            -DBUILD_TESTING=OFF
