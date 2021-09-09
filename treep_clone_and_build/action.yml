@@ -106,12 +106,14 @@ runs:
       run: |
         source /opt/openrobots/setup.bash
         echo colcon build \
+          --parallel-workers 1 \
           --event-handlers console_direct+ \
           --cmake-args \
             -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
             -DPYBIND11_TEST=OFF \
             -DBUILD_TESTING=OFF
         colcon build \
+          --parallel-workers 1 \
           --event-handlers console_direct+ \
           --cmake-args \
             -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
